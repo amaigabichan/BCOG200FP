@@ -20,3 +20,8 @@ The project aims to implement two servers for text communication using Python. T
 This is the completed functionality from the proposed project in command line, as other than the GUI, end-to-end encryption and communication has been achieved. As messages could not display without having a working TCP connection, it is evident that that portion works. Additionally, as an encryption decryption scheme, such as AES, needs both ends to properly decrypt and encrypt to have comprehensible text, that portion also works.
 
 I must still complete the GUI. I want to add functions/functionality to change keys and initialization vectors through a handshake process to add additional security which may cause difficulties in the future. Additionally, I want to be able to send files possibly.
+
+#NOTE: pycryptodome is a required library to be installed before running! Intall it with
+```
+pip install pycryptodome
+```
