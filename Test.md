@@ -7,3 +7,8 @@ Finally, switch back to the first terminal, and type your message to send a mess
 As messages could not display without having a working TCP connection, it is evident that that portion works. Additionally, as an encryption decryption scheme, such as AES, needs both ends to properly decrypt and encrypt to have comprehensible text, that portion also works.
 
 You can take the code for encryption and decryption from the code alongside the key generation in order to verify that they work to encrypt and decrypt data. This has already been done within development, so testing this is not urgent for future development.
+
+#NOTE: pycryptodome is a required library to be installed before running! Intall it with
+```
+pip install pycryptodome
+```
