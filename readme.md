@@ -8,7 +8,7 @@
 
 2b. `decrypt_aes_cbc(ciphertext, key=Key, iv=IV)`: This function takes an encrypted message and the corresponding decryption key as input, and decrypts the message using the AES decryption algorithm using a chain-block-cipher. It returns the decrypted plaintext message as a string.
 
-2c. `gui()`: This function will create a graphical user interface using a Python GUI library (e.g., Tkinter, PyQt, or Kivy) to provide an intuitive interface for users to interact with the servers. It will include features such as input fields for messages, buttons for sending and receiving messages, and display areas for the conversation history.
+2c. `gui()`: This function creates a graphical user interface using Tkinter to provide an intuitive interface for users to interact with the servers. It includes input fields for messages, buttons for sending and receiving messages, and display areas for the conversation history.
 
 2d. `main()`: This function servers as the entry point of the program. It handles the initialization of the servers, establishes connections between them, and manages the flow of communication. Additionally, it will invoke the GUI function to launch the graphical interface for user interaction.
 
