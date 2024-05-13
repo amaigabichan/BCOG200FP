@@ -12,3 +12,26 @@ You can take the code for encryption and decryption from the code alongside the 
 ```
 pip install pycryptodome
 ```
+# UPDATED INSTRUCTIONS FOR TESTING
+
+1. Open two command line interfaces
+
+2. Change the directory to the folder containing the Python file (chatclient.py)
+
+3. On one command prompt run this:
+python chatclient.py
+
+Type in your IPV4 address: 127.0.0.1
+Type the client IPV4 address: 127.0.0.1
+What port do you want to listen through? (pick a number 1200-65536 if you get an error without the GUI opening, try again and pick an unused port) 6001
+Which port do you want to talk through? (must be the listening port used on the other device) 6000
+
+
+
+4. On another command prompt run this:
+
+python chatclient.py
+Type in your IPV4 address: 127.0.0.1
+Type the client IPV4 address: 127.0.0.1
+What port do you want to listen through? (pick a number 1200-65536 if you get an error without the GUI opening, try again and pick an unused port) 6000
+Which port do you want to talk through? (must be the listening port used on the other device) 6001
