@@ -25,7 +25,10 @@ class ChatAppClient:
         self.socket2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.ip0 = input("Type in your IPV4 address: ")
         self.ip = input("Type the client IPV4 address: ")
-        self.socket2.bind((self.ip0, 12346))
+        self.port= int(input("What port do you want to listen through? (pick a number 1200-65536 if you get an error without the GUI opening, try again and pick an unused port) "))
+        self.port1= int(input("Which port do you want to talk through? (must be the listening port used on the other device) "))
+        self.socket2.bind((self.ip0, self.port))
+        
         self.socket2.settimeout(2.0)  # 2 seconds timeout for receiving messages
 
     def setup_gui(self):
@@ -54,7 +57,7 @@ class ChatAppClient:
     def send_message(self):
         message = self.msg_entry.get()
         encrypted_msg = self.encrypt_message(message)
-        self.socket2.sendto(encrypted_msg, (self.ip, 12345))  # Assuming receiver's address and port
+        self.socket2.sendto(encrypted_msg, (self.ip, self.port1))  # Assuming receiver's address and port
         self.msg_display.insert(tk.END, f"Sent: {message}\n")
         self.msg_entry.delete(0, tk.END)  # Clear the input field after sending
 
