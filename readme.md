@@ -4,7 +4,6 @@
 1. The project aims to implement two servers for text communication using Python. These servers will communicate with each other through TCP (Transmission Control Protocol) and encrypt their messages using the AES (Advanced Encryption Standard) encryption algorithm. This will ensure secure communication between the servers, maintaining confidentiality of the transmitted data. Additionally, a graphical user interface (GUI) will be provided for user interaction to have a more user friendly feel.
 
 ## Functions (included one more):
-
 1. `__init__(self, root)`: 
     - Constructor method that initializes the chat application.
     - Sets up the GUI, initializes the socket, and starts a thread to receive messages.
@@ -54,9 +53,7 @@ This is the completed functionality from the proposed project in command line an
 ```
 pip install pycryptodome
 ```
-
 # UPDATED INSTRUCTIONS FOR TESTING
-
 1. Open two command line interfaces
 2. Change the directory to the folder containing the Python file (*chatclient.py*)
 3. On one command prompt run this:
